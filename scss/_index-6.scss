@@ -1,0 +1,432 @@
+/*
+    Slider Home Six
+*/
+.slider-home-six{
+    .tp-mask-wrap{
+        overflow: visible !important;
+    }
+    .banner-caption-h1{
+        text-align: center;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 110px;
+        line-height: 110px;
+        color: $default-text;
+        @include font-regular();
+        strong{
+            font-weight: 900 !important;
+            letter-spacing: 5px !important;
+        }
+    }
+    .banner-caption-p{
+        text-align: center;
+        font-family: 'Qicksand', sans-serif;
+        font-size: 30px;
+        line-height: 30px;
+        color: #dcddde;
+        letter-spacing: 5px;
+        @include font-regular();
+    }
+    .banner-caption-button{
+        text-align: right;
+        line-height: 36px;
+        a{
+            display: inline-block;
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 14px;
+            color: $default-text;
+            line-height: 36px;
+            border: 2px solid #0ba2a5;
+            border-radius: 40px;
+            padding: 0 35px;
+            @include font-semi-bold();
+            &.quote{
+                box-shadow: rgba(0,0,0,0.54) 0 14px 24px;
+                background: #0ba2a5;
+                &:hover{
+                    background: transparent;
+                }
+            }
+            &.read-more{
+                &:hover{
+                    background: #0ba2a5;
+                    box-shadow: rgba(0,0,0,0.54) 0 14px 24px;
+                }
+            }
+        }
+    }
+}
+/*
+    Step
+*/
+.step{
+    @extend .how-we-work;
+    .box-step{
+        background: transparent;
+        margin-bottom: 0;
+        &:before, &:after{
+            display: none;
+        }
+        .brick-flex-box{
+            .box-number{
+                h3{
+                    font-family: 'Titillium Web', sans-serif;
+                    @include font-semi-bold();
+                }
+            }
+            .box-content{
+                p{
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+/*
+    About The Brick
+*/
+.about-the-brick{
+    &.set-padding{
+        padding-bottom: 150px;
+    }
+    .title{
+        text-align: center;
+        h3{
+            padding-bottom: 30px;
+            font-size: 33px;
+            color: #1b2725;
+            @include font-bold();
+        }
+        p{
+            padding: 0 170px;
+            font-size: 16px;
+            color: $second-text;
+            @include font-regular();
+        }
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .box-img{
+            display: inline-block;
+            padding-top: 150px;
+            position: relative;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            transition: all .5s ease;
+        }
+        .box-content{
+            text-align: center;
+            position: absolute;
+            &.top-left{
+                top: 50%;
+                left: -45%;
+            }
+            &.top-center{
+                top: 65px;
+                left: 50%;
+                margin-left: -150px;
+            }
+            &.top-right{
+                top: 40%;
+                right: -45%;
+            }
+            &.bottom-left{
+                bottom: -50px;
+                left: 5%;
+            }
+            &.bottom-right{
+                bottom: 0;
+                right: -20%;
+            }
+            h3{
+                padding-bottom: 10px;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 20px;
+                line-height: 25px;
+                color: $second-text;
+                @include font-bold();
+            }
+            p{
+                font-size: 12px;
+                line-height: 20px;
+                color: $second-text;
+                @include font-regular();
+            }
+        }
+    }
+}
+/*
+    Our Services
+*/
+.our-services-v5{
+    background: url('../images/index-6/services.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .box{
+        .box-icon{
+            .flaticon{
+                &:before{
+                    color: rgba($default-text, .4);
+                }
+            }
+        }
+        .box-content{
+            .box-content-h3{
+                h3{
+                    color: $default-text;
+                }
+            }
+            .box-content-p{
+                p{
+                    color: #dcddde !important;
+                }
+            }
+        }
+    }
+}
+/*
+    Our Skills
+*/
+.our-skills{
+    .box{
+        padding-right: 70px;
+        h3{
+            padding-bottom: 15px;
+            font-size: 33px;
+            line-height: 35px;
+            color: #1b2725;
+            @include font-bold();
+        }
+        strong{
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            color: $second-text;
+            @include font-bold();
+        }
+        p{
+            padding-top: 11px;
+            padding-bottom: 44px;
+            font-size: 16px;
+            color: $second-text;
+            @include font-regular();
+        }
+        .box-skills{
+            .skill-bar{
+                width: 100%;
+                height: 4px;
+                background: #cacbcb;
+                margin: 51px 0;
+                position: relative;
+                h5{
+                    position: absolute;
+                    top: -30px;
+                    font-size: 16px;
+                    color: #1b2725;
+                    &.title{
+                        @include font-bold();
+                        left: 0;
+                    }
+                    &.count{
+                        margin-left: -10px;
+                        @include font-regular();
+                        left: 100%;
+                    }
+                }
+                .count-bar{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #0ba2a5; 
+                }
+            }
+        }
+    }
+    .box-img{
+        overflow: hidden;
+        &:hover{
+            img{
+                @include scale(1.1);
+                transition: all .5s ease;
+            }
+        }
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: all .5s ease;
+        }
+    }
+}
+/*
+    Happy Client Say
+*/
+.clients-say-v2{
+    .clients-say-slick-v2{
+        li{
+            opacity: 0;
+            outline: none;
+            &.slick-active{
+                opacity: 1;
+            }
+            .box{
+                .box-content{
+                    text-align: center;
+                    p{
+                        padding: 0 100px;
+                        font-family: 'Titillium Web', sans-serif;
+                        font-size: 24px;
+                        line-height: 30px;
+                        color: $second-text;
+                        @include font-regular();
+                    }
+                }
+                .box-img{
+                    margin-top: 40px;
+                    text-align: center;
+                    a{
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        display: inline-block;
+                        &:hover{
+                            img{
+                                @include scale(1.1);
+                                transition: all .5s ease;
+                            }
+                        }
+                        img{
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 50%;
+                            display: block;
+                            margin: 0 auto;
+                            transition: all .5s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ul.slick-dots{
+        margin-top: 42px;
+        text-align: center;
+        li{
+            padding: 0 6px;
+            opacity: 1;
+            display: inline-block;
+            &:hover, &.slick-active{
+                button{
+                    background: $primary-color-darkgreen;
+                }
+            }
+            button{
+                width: 10px;
+                height: 10px;
+                background: #d1d4d3;
+                border-radius: 50%;
+                text-indent: -9999px;
+                outline: none;
+                box-shadow: none;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+/*
+    Our Project
+*/
+.our-project-v2{
+    .box{
+        overflow: hidden;
+        position: relative;
+        &:hover{
+            .brick-flex-box{
+                top: 0;
+                transition: all .5s ease;
+            }
+        }
+        .box-img{
+            img{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+        .brick-flex-box{
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: -100%;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, .6);
+            transition: all .5s ease;
+            .box-content{
+                text-align: center;
+                h3{
+                    display: inline-block;
+                    font-size: 30px;
+                    line-height: 35px;
+                    color: $default-text;
+                    @include font-black();
+                }
+                p{
+                    font-size: 14px;
+                    color: #dcddde;
+                    @include font-regular();
+                }
+            }
+        }
+    }
+}
+/*
+    Latest News
+*/
+.latest-news-v3{
+    @extend .latest-news-v2;
+    .uk-slider-container{
+        padding-bottom: 20px;
+    }
+    ul{
+        li{
+            .box{
+                .box-img{
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    img{
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                    }
+                }
+                .box-content{
+                    margin: -93px 20px 0 20px;
+                    padding: 25px 20px;
+                    background: $default-text;
+                    position: relative;
+                    z-index: 9;
+                    box-shadow: 0 5px 16px rgba(0, 0, 0, .34);
+                    .box-content-p{
+                        p{
+                            padding-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

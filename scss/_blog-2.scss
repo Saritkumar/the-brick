@@ -1,0 +1,23 @@
+/*
+    Blog
+*/
+.blog-v2{
+    @extend .blog-v1;
+    .box{
+        margin-bottom: 45px;
+        background: $default-text;
+        &:hover{
+            box-shadow: none;
+        }
+        .box-img{
+            margin-bottom: 23px;
+        }
+        .box-content{
+            border: none;
+            padding: 0;
+        }
+    }
+    .brick-pagination{
+        margin-top: 65px;
+    }
+}

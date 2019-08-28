@@ -1,0 +1,32 @@
+/*
+    Blog
+*/
+.blog-v1{
+    .box{
+        margin-bottom: 30px;
+        background: $default-text;
+        transition: all .5s ease;
+        &:hover{
+            box-shadow: 0 0 27px rgba(0, 0, 0, .25);
+            transition: all .5s ease;
+        }
+        .box-img{
+            margin-bottom: 0;
+        }
+        .box-content{
+            border: 1px solid #dcddde;
+            padding: 23px 30px 32px 30px;
+            .box-content-p{
+                p{
+                    padding-bottom: 12px;
+                }
+            }
+            a.read-more{
+                font-family: 'Titillium Web', sans-serif;
+                font-size: 14px;
+                color: #1b2725;
+                @include font-bold;
+            }
+        }
+    }
+}

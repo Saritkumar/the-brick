@@ -1,0 +1,546 @@
+/*----------------------
+    Header V1
+------------------------*/
+.header-v1{
+    &.uk-active{
+        box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .2);
+        .top-bar{
+            display: none;
+        }
+    }
+    .top-bar{
+        border-bottom: 1px solid #e9e9ea;
+        .logo{
+            height: 99px;
+            a{
+                display: inline-block;
+                img{
+                    display: block;
+                }
+            }
+        }
+        .brick-flex-box{
+            height: 99px;
+            .box{
+                display: flex;
+                align-items: flex-start;
+                .box-icon{
+                    span{
+                        padding-right: 16px;
+                        font-size: 36px;
+                        color: $second-text;
+                    }
+                }
+                .box-text{
+                    h5{
+                        font-size: 16px;
+                        color: #1b2725;
+                        line-height: 22px;
+                        @include font-bold();
+                    }
+                    p{
+                        font-size: 12px;
+                        color: $second-text;
+                        line-height: 20px;
+                        @include font-regular();
+                    }
+                }
+            }
+        }
+    }
+    .header{
+        background: url('../images/header/background-header-v1.jpg') no-repeat center center;
+        @include background-cover();
+        .menu-primary{
+            float: left;
+            ul.main-menu{
+                li{
+                    &:first-child{
+                        a{
+                            padding-left: 0;
+                        }
+                    }
+                    &.mega-menu{
+                        .uk-dropdown{
+                            margin-top: 0;
+                            &:before{
+                                display: none;
+                            }
+                            .submenu{
+                                .submenu-title{
+                                    h5{
+                                        font-size: 14px;
+                                        color: #1b2725;
+                                        padding-bottom: 20px;
+                                        position: relative;
+                                        @include font-semi-bold();
+                                        &:before{
+                                            content: '';
+                                            width: 50px;
+                                            height: 2px;
+                                            background: $primary-color-yellow;
+                                            position: absolute;
+                                            left: 0;
+                                            bottom: 15px;
+                                        }
+                                    }
+                                }
+                                li{
+                                    &:hover{
+                                        &:hover{
+                                            a{
+                                                padding-left: 25px;
+                                                transition: all .5s ease;
+                                            }
+                                        }
+                                    }
+                                    a{
+                                        padding-left: 0;
+                                        i{
+                                            left: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.cart{
+                        line-height: 40px;
+                    }
+                    a{
+                        font-family: 'Titillium Web', sans-serif;
+                        font-size: 14px;
+                        color: #1b2725;
+                        padding: 0 20px;
+                        height: 60px;
+                        line-height: 60px;
+                        background: transparent !important;
+                        position: relative;
+                        @include font-semi-bold();
+                    }
+                    .uk-dropdown{
+                        background: url('../images/header/background-header-v1.jpg') no-repeat center center;
+                        @include background-cover();
+                        box-shadow: 0px 3px 8px rgba(0, 0, 0, .2);
+                        &:before{
+                            content: '';
+                            width: 0;
+                            height: 0;
+                            border-left: 5px solid transparent;
+                            border-right: 5px solid transparent;
+                            border-bottom: 5px solid $primary-color-yellow;
+                            position: absolute;
+                            top: -5px;
+                            left: 30px;
+                        }
+                        &:after{
+                            content: '';
+                            width: 100%;
+                            height: 3px;
+                            background: $primary-color-yellow;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: auto;
+                            left: 0;
+                        }
+                        li{
+                            &:hover{
+                                a{
+                                    padding-left: 45px;
+                                    transition: all .5s ease;
+                                    i{
+                                        opacity: 1;
+                                        left: 25px;
+                                        transition: all .5s ease;
+                                    }
+                                }
+                            }
+                            a{
+                                padding-left: 25px;
+                                height: 40px;
+                                line-height: 40px;
+                                transition: all .5s ease;
+                                i{
+                                    opacity: 0;
+                                    position: absolute;
+                                    left: 0;
+                                    top: 50%;
+                                    @include translate-y(-50%);
+                                    transition: all .5s ease;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .search{
+            float: right;
+            height: 60px;
+            line-height: 60px;
+            position: relative;
+            a{
+                font-size: 14px;
+                color: #1b2725;
+                padding-left: 20px;
+                &.cart{
+                    display: none;
+                }
+            }
+            .uk-dropdown{
+                background: url('../images/header/background-header-v1.jpg') no-repeat center center;
+                @include background-cover();
+                box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+                form{
+                    line-height: 40px;
+                    input{
+                        width: 100%;
+                        font-size: 14px;
+                        font-family: 'Titillium Web', sans-serif;
+                        outline: none;
+                        &:focus{
+                            background: $default-text;
+                            border: 1px solid $primary-color-yellow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.mobile-logo{
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    float: left;
+    a{
+        display: inline-block;
+        img{
+            display: block;
+        }
+    }
+}
+.mobile-menu{
+    display: none;
+    position: relative;
+    z-index: 999;
+    .nav-holder{
+        >ul{
+            >li{
+                border-top: 1px solid #e9e9ea;
+                >a{
+                    background: url('../images/header/background-header-v1.jpg') no-repeat center center;
+                    @include background-cover();
+                    display: block;
+                    color: #1b2725;
+                    padding: 5px 15px;
+                    font-family: 'Titillium Web', sans-serif;
+                    font-size: 14px;
+                    line-height: 40px;
+                    @include font-semi-bold();
+                    button{
+                        border: none;
+                        color: $black-text;
+                        background: url('../images/header/background-header-v1.jpg') no-repeat center center;
+                        @include background-cover();
+                        position: absolute;
+                        right: 8px;
+                        width: 30px;
+                        height: auto;
+                        cursor: pointer;
+                        z-index: 999;
+                        &:focus{
+                            outline: none;
+                        }
+                        span{
+                            font-size: 12px;
+                        }
+                    }
+                }
+                ul.submenu{
+                    background: #f9f8f8;
+                    display: none;
+                    li{
+                        display: block;
+                        border-top: 1px solid #dbdbdb;
+                        >a{
+                            display: block;
+                            line-height: 40px;
+                            padding: 5px 40px;
+                            color: $black-text;
+                            span{
+                                padding-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.toggle-icon{
+    display: none;
+    a{
+        display: inline;
+        font-size: 14px;
+        color: #1b2725;
+        padding-right: 0 !important;
+        border-right: none !important;
+    }
+}
+/*----------------------
+    Header V2
+------------------------*/
+.header-v2{
+    @extend .header-v1;
+    &.uk-active{
+        .header{
+            .logo{
+                height: 60px;
+            }
+            .search{
+                height: 60px;
+                line-height: 60px;
+            }
+            .brick-button{
+                height: 60px;
+                line-height: 60px;
+            }
+            .menu-primary{
+                ul.main-menu{
+                    li{
+                        a{
+                            line-height: 60px;
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header{
+        background: $default-text;
+        .logo{
+            height: 125px;
+            float: left;
+            a{
+                img{
+                    display: block;
+                }
+            }
+        }
+        .search{
+            height: 125px;
+            line-height: 125px;
+            float: right;
+            a{
+                &.cart-icon{
+                    padding-right: 30px;
+                }
+                &.search-icon{
+                    border-left: 1px solid #c5cccc;
+                    padding-left: 30px;
+                }
+            }
+            .uk-dropdown{
+                background: $default-text;
+                form{
+                    input{
+                        &:focus{
+                            background: $default-text;
+                            border: 1px solid $primary-color-darkgreen;
+                        }
+                    }
+                }
+            }
+        }
+        .brick-button{
+            width: 15%;
+            height: 125px;
+            line-height: 125px;
+            float: right;
+            text-align: right;
+            h3{
+                background: #0ba2a5;
+                &:hover{
+                    background: transparent;
+                    border: 2px solid #0ba2a5;
+                    color: #0ba2a5;
+                }
+            }
+        }
+        .menu-primary{
+            float: right;
+            ul.main-menu{
+                li{
+                    &.mega-menu{
+                        .uk-dropdown{
+                            .submenu{
+                                .submenu-title{
+                                    h5{
+                                        &:before{
+                                            background: $primary-color-darkgreen;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    a{
+                        line-height: 125px;
+                        height: 125px;
+                    }
+                    .uk-dropdown{
+                        background: $default-text;
+                        box-shadow: 0px 3px 8px rgba(0, 0, 0, .2);
+                        &:before{
+                            border-bottom: 5px solid $primary-color-darkgreen;
+                        }
+                        &:after{
+                            background: $primary-color-darkgreen;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mobile-menu{
+        .nav-holder{
+            >ul{
+                >li{
+                    border-top: 1px solid #e9e9ea;
+                    >a{
+                        background: $default-text;
+                        button{
+                            background: $default-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*----------------------
+    Header V3
+------------------------*/
+.header-v3{
+    @extend .header-v2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    &.uk-active{
+        .header{
+            background: $default-text;
+            .menu-primary{
+                ul.main-menu{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .header{
+        background: transparent;
+        .menu-primary{
+            ul.main-menu{
+                margin-top: 33px;
+                li{
+                    a{
+                        height: 60px;
+                        line-height: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*----------------------
+    Header V4
+------------------------*/
+.header-v4{
+    @extend .header-v1;
+    .top-bar{
+        .brick-flex-box{
+            justify-content: center;
+        }
+        .logo{
+            a{
+                img{
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+    .header{
+        .menu-primary{
+            float: none;
+            display: flex;
+            justify-content: center;
+        }
+        .search{
+            display: none;
+        }
+    }
+}
+/*----------------------
+    Header V5
+------------------------*/
+.header-v5{
+    @extend .header-v2;
+    .top-bar{
+        border-bottom: none;
+        background: #f4f4f4;
+        height: 40px;
+        line-height: 40px;
+        .social{
+            float: left;
+            li{
+                padding-right: 18px;
+                display: inline-block;
+                a{
+                    font-size: 14px;
+                    color: $second-text;
+                }
+            }
+        }
+        .contact-info{
+            float: right;
+            li{
+                display: inline-block;
+                padding-left: 55px;
+                p{
+                    color: $second-text;
+                    font-size: 14px;
+                    span{
+                        color: $second-text;
+                        font-size: 14px;
+                        padding-right: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .header{
+        .logo{
+            height: 110px;
+        }
+        .search{
+            height: 110px;
+            line-height: 110px;
+        }
+        .menu-primary{
+            ul.main-menu{
+                li{
+                    a{
+                        line-height: 110px;
+                        height: 110px;
+                    }
+                }
+            }
+        }
+    }
+}

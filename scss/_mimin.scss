@@ -1,0 +1,74 @@
+////[Table of contents]
+
+////1. Background Cover
+////2. Translate X
+////3. Translate Y
+////4. Translate XY
+////5. Scale
+////6. Font Light
+////7. Font Regular
+////8. Font Medium
+////9. Font Semi Bold
+////10. Font Bold
+////11. Font Black
+
+////[End table of contents]
+
+@mixin background-cover(){
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+@mixin translate-x($x){
+   -webkit-transform: translateX($x);
+   -moz-transform: translateX($x);
+   -o-transform: translateX($x);
+   transform: translateX($x);
+}
+
+@mixin translate-y($y){
+   -webkit-transform: translateY($y);
+   -moz-transform: translateY($y);
+   -o-transform: translateY($y);
+   transform: translateY($y);
+}
+
+@mixin translate-xy($x, $y){
+   -webkit-transform: translateX($x) translateY($y);
+   -moz-transform: translateX($x) translateY($y);
+   -o-transform: translateX($x) translateY($y);
+   transform: translateX($x) translateY($y);
+}
+
+@mixin scale($y){
+   -webkit-transform: scale($y);
+   -moz-transform: scale($y);
+   -o-transform: scale($y);
+   transform: scale($y);
+}
+
+@mixin font-light{
+    font-weight: 300;
+}
+
+@mixin font-regular{
+    font-weight: 400;
+}
+
+@mixin font-medium{
+    font-weight: 500;
+}
+
+@mixin font-semi-bold{
+    font-weight: 600;
+}
+
+@mixin font-bold{
+    font-weight: 700;
+}
+
+@mixin font-black{
+    font-weight: 900;
+}

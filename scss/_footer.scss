@@ -1,0 +1,158 @@
+/*
+    Footer V1
+*/
+.footer-v1{
+    .footer{
+        padding: 90px 0;
+        background: #1e1f1f;
+        .box{
+            .box-logo{
+                margin-bottom: 25px;
+                a{
+                    display: inline-block;
+                    img{
+                        display: block;
+                    }
+                }
+            }
+            .box-content{
+                .box-content-p{
+                    p{
+                        font-size: 14px;
+                        color: #dcddde;
+                        padding-bottom: 14px;
+                        @include font-regular();
+                    }
+                }
+                .box-content-social{
+                    li{
+                        display: inline-block;
+                        padding-right: 18px;
+                        a{
+                            font-size: 14px;
+                            color: $second-text;
+                        }
+                    }
+                }
+                .box-content-contact{
+                    li{
+                        p{
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 14px;
+                            color: #dcddde;
+                            @include font-regular();
+                        }
+                        span{
+                            font-size: 14px;
+                            padding-right: 14px;
+                        }
+                    }
+                }
+                .box-content-office{
+                    li{
+                        padding-bottom: 10px;
+                        align-items: flex-start;
+                        display: flex;
+                        p{
+                            flex: 1 1 0px;
+                            -ms-flex: 1 1 0px;
+                            font-family: 'Quicksand', sans-serif;
+                            color: #dcddde;
+                            font-size: 14px;
+                            @include font-regular();
+                        }
+                        a{
+                            display: flex;
+                            align-items: flex-start;
+                            font-family: 'Quicksand', sans-serif;
+                            font-size: 14px;
+                            color: #dcddde;
+                            @include font-regular();
+                        }
+                        span{
+                            margin-top: 6px;
+                            color: #dcddde;
+                            padding-right: 14px;
+                            font-size: 14px;
+                            min-width: 28px;
+                        }
+                    }
+                }
+            }
+            .box-title{
+                h3{
+                    padding-top: 16px;
+                    padding-bottom: 25px;
+                    font-size: 20px;
+                    color: #dcddde;
+                    @include font-bold();
+                }
+            }
+        }
+    }
+    .copyright{
+        text-align: center;
+        padding: 0 15px;
+        height: 55px;
+        line-height: 55px;
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            color: $default-text;
+            @include font-regular();
+            span{
+                color: #1b2725;
+            }
+        }
+    }
+}
+/*
+    Footer V2
+*/
+.footer-v2{
+    @extend .footer-v1;
+    .footer{
+        .box{
+            text-align: center;
+            .box-content{
+                .box-content-p{
+                    p{
+                        padding: 0 300px 25px 300px;
+                    }
+                }
+                .box-content-social{
+                    li{
+                        padding: 0 19px;
+                        a{
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        background: #1b2725;
+        p{
+            span{
+                color: #02c8ad;
+            }
+        }
+    }
+}
+/*
+    Footer V3
+*/
+.footer-v3{
+    @extend .footer-v1;
+    .footer{
+        background: #232f2d;
+    }
+    .copyright{
+        p{
+            span{
+                color: #02c8ad;
+            }
+        }
+    }
+}

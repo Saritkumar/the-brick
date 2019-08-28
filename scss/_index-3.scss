@@ -1,0 +1,164 @@
+/*
+    Slider Home Three
+*/
+.slider-home-three{
+    .banner-caption-form{
+        width: 400px;
+        .box{
+            text-align: center;
+            background: #202524;
+            padding: 50px;
+            .box-title{
+                h3{
+                    line-height: 26px;
+                    padding-bottom: 15px;
+                    font-size: 24px;
+                    color: $default-text;
+                    @include font-black();
+                }
+            }
+            .box-text{
+                p{
+                    line-height: 26px;
+                    padding-bottom: 35px;
+                    font-size: 14px;
+                    color: #f8f8f8;
+                    @include font-regular();
+                }
+            }
+            form{
+                input, textarea{
+                    font-size: 14px;
+                    line-height: 40px;
+                    outline: none;
+                    width: 100%;
+                    padding: 5px 30px;
+                    background: #cdcece;
+                    display: block;
+                    color: #000000;
+                    &::-webkit-input-placeholder {
+                        font-family: 'Quicksand', sans-serif;
+                        opacity: 1;
+                        color: #1e1f1f;
+                    }
+                    &:-moz-placeholder {
+                        font-family: 'Quicksand', sans-serif;
+                        opacity: 1;
+                        color: #1e1f1f;
+                    }
+                    &::-moz-placeholder {
+                        font-family: 'Quicksand', sans-serif;
+                        opacity: 1;
+                        color: #1e1f1f;
+                    }
+                    &:-ms-input-placeholder {
+                        font-family: 'Quicksand', sans-serif;
+                        opacity: 1;
+                        color: #1e1f1f !important;
+                    }
+                }
+                input{
+                    height: 40px;
+                    border-radius: 40px;
+                    margin-bottom: 25px;
+                }
+                textarea{
+                    border-radius: 20px;
+                    margin-bottom: 35px;
+                }
+                .brick-button{
+                    a{
+                        display: inline-block;
+                        border-radius: 40px;
+                        background: $primary-color-yellow;
+                        &:hover{
+                            background: transparent;
+                        }
+                    }
+                    h3{
+                        line-height: 40px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+    Count To Number
+*/
+.countto-number{
+    @extend .the-brick;
+    .count-to-number{
+        padding: 51px 0;
+        border-top: none;
+        .box{
+            .box-number{
+                h3{
+                    padding-bottom: 7px;
+                    @include font-black();
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+/*
+    Our Services V3
+*/
+.our-services-v3{
+    @extend .our-services-v2;
+}
+/*
+    See Our Work
+*/
+.see-our-work{
+    @extend .we-are-brick;
+    background: #202222;
+    &.set-padding{
+        padding-bottom: 0;
+    }
+    .box{
+        padding-left: 30px;
+        .box-title{
+            h3{
+                color: $default-text;
+                @include font-black();
+            }
+        }
+        .box-content{
+            padding-right: 0;
+            strong{
+                font-size: 14px;
+                color: #f8f8f8;
+            }
+            p{
+                font-size: 14px;
+                color: #f8f8f8;
+            }
+        }
+    }
+    .videos{
+        margin-bottom: -45px;
+        box-shadow: 0 0 50px rgba(0, 0, 0, .2);
+        .box-img{
+            border-radius: 0;
+            img{
+                border-radius: 0;
+            }
+            span{
+                font-size: 90px;
+                opacity: .9;
+            }
+        }
+    }
+}
+/*
+    Recent Projects
+*/
+.recent-projects{
+    &.set-padding{
+        padding-top: 135px;
+    }
+}

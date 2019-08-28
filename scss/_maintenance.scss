@@ -1,0 +1,84 @@
+/*
+    Maintenance
+*/
+.maintenance{
+    align-items: flex-end;
+    height: 100vh;
+    padding: 0 120px 90px 120px;
+    background: url('../images/maintenance/background.jpg') no-repeat center center;
+    @include background-cover();
+    .box{
+        width: 50%;
+        a{
+            display: inline-block;
+            img{
+                display: block;
+                margin-bottom: 55px;
+            }
+        }
+        h5{
+            font-size: 24px;
+            line-height: 25px;
+            color: $default-text;
+            @include font-regular();
+            letter-spacing: 5px;
+        }
+        h3{
+            padding-bottom: 23px;
+            font-size: 60px;
+            line-height: 50px;
+            color: $default-text;
+            @include font-black();
+        }
+        p{
+            padding-bottom: 32px;
+            font-size: 14px;
+            color: #b1b1b1;
+            @include font-regular();
+        }
+        ul.social{
+            margin-bottom: 88px;
+            li{
+                padding-right: 20px;
+                display: inline-block;
+                a{
+                    padding-right: 5px;
+                    font-size: 18px;
+                    color: rgba(#dcddde, .5);
+                }
+            }
+        }
+        .bar{
+            background: rgba($default-text, .3);
+            border-radius: 10px;
+            position: relative;
+            height: 10px;
+            .maintenance-bar{
+                width: 100%;
+                .count-bar{
+                    width: 0%;
+                    height: 100%;
+                    background: $primary-color-yellow;
+                    border-radius: 10px;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+            h6{
+                font-size: 14px;
+                color: $default-text;
+                @include font-regular();
+                position: absolute;
+                top: -33px;
+                &.status{
+                    left: 0;
+                }
+                &.number{
+                    right: 0;
+                }
+            }
+        }
+    }
+}

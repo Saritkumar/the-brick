@@ -1,0 +1,151 @@
+/*
+    Portfolio Detail
+*/
+.portfolio-detail{
+    .portfolio-detail-content{
+        .box-detail-img{
+            overflow: hidden;
+            &:hover{
+                img{
+                    @include scale(1.1);
+                    transition: all .5s ease;
+                }
+            }
+            img{
+                display: block;
+                width: 100%;
+                height: auto;
+                transition: all .5s ease;
+            }
+        }
+        .box-detail-content{
+            padding: 60px 30px 0 30px;
+            background: #1b2725;
+            h3{
+                padding-bottom: 15px;
+                display: inline-block;
+                font-size: 25px;
+                line-height: 30px;
+                color: $default-text;
+                @include font-black();
+                position: relative;
+                &:before{
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background: #555e5d;
+                    position: absolute;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+            ul{
+                padding-top: 22px;
+                li{
+                    p{
+                        font-size: 16px;
+                        line-height: 35px;
+                        color: #dcddde;
+                        @include font-regular();
+                        stronh{
+                            @include font-bold();
+                        }
+                    }
+                }
+            }
+        }
+        .building-house{
+            padding-top: 44px;
+            h3{
+                padding-bottom: 16px;
+                font-size: 33px;
+                line-height: 35px;
+                color: #1b2725;
+                @include font-bold();
+            }
+            .bar{
+                position: relative;
+                margin-bottom: 25px;
+                .building-house-bar{
+                    width: 100%;
+                    height: 16px;
+                    background: #555e5d;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 16px;
+                    .count-bar{
+                        position: absolute;
+                        width: 0%;
+                        height: 100%;
+                        background: url('../images/portfolio-detail/line.jpg');
+                    }
+                }
+                .count{
+                    font-size: 12px;
+                    color: #1b2725;
+                    @include font-bold();
+                    position: absolute;
+                    bottom: -23px;
+                    left: 0%;
+                    margin-left: -15px;
+                }
+            }
+            p{
+                @include font-regular();
+                font-size: 14px;
+                color: $second-text;
+            }
+        }
+        .project-images{
+            padding-top: 35px;
+            h3{
+                margin-bottom: 40px;
+                font-size: 25px;
+                color: #1b2725;
+                @include font-bold();
+                border-bottom: 1px solid #dcddde;
+                padding-bottom: 15px;
+            }
+            ul{
+                li{
+                    .box-img{
+                        position: relative;
+                        &:hover{
+                            .brick-flex-box{
+                                top: 0;
+                                bottom: 0;
+                                transition: all .5s ease;
+                            }
+                        }
+                        img{
+                            display: block;
+                            width: 100%;
+                            height: auto;
+                        }
+                        .brick-flex-box{
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, .7);
+                            position: absolute;
+                            top: -100%;
+                            left: 0;
+                            right: 0;
+                            bottom: auto;
+                            transition: all .5s ease;
+                            a{
+                                text-align: center;
+                            }
+                            span{
+                                font-size: 25px;
+                                color: $default-text;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,222 @@
+/*
+    Slider Home Four
+*/
+.slider-home-four{
+    .tp-mask-wrap{
+        overflow: visible !important;
+    }
+    .banner-caption-h3{
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 60px;
+        line-height: 60px;
+        color: #1b2725;
+        @include font-light();
+    }
+    .banner-caption-h1{
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 100px;
+        line-height: 100px;
+        color: #1b2725;
+        @include font-black();
+    }
+    .banner-caption-p{
+        font-family: 'Qicksand', sans-serif;
+        font-size: 30px;
+        line-height: 35px;
+        color: $second-text;
+        @include font-regular();
+    }
+    .banner-caption-button{
+        line-height: 36px;
+        a{
+            display: inline-block;
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 14px;
+            color: $default-text;
+            background: #0ba2a5;
+            line-height: 36px;
+            border: 2px solid #0ba2a5;
+            border-radius: 40px;
+            box-shadow: rgba(0,0,0,0.54) 0 14px 24px;
+            padding: 0 35px;
+            @include font-semi-bold();
+            &:hover{
+                background: transparent;
+                color: #0ba2a5;
+            }
+        }
+    }
+}
+/*
+    We Change The World
+*/
+.we-change-the-world{
+    .brick-flex-box{
+        padding: 0 100px;
+        background: #f4f4f4;
+        .box{
+            .box-title{
+                h3{
+                    display: inline-block;
+                    padding-bottom: 24px;
+                    font-size: 33px;
+                    line-height: 40px;
+                    color: #1b2725;
+                    @include font-bold();
+                }
+            }
+            .box-content{
+                p{
+                    padding-bottom: 10px;
+                    font-size: 16px;
+                    color: $second-text;
+                    @include font-regular();
+                }
+            }
+            .box-button{
+                margin-top: 54px;
+                a{
+                    margin-right: 65px;
+                    float: left;
+                    display: flex;
+                    align-items: center;
+                    font-family: 'Titillium Web', sans-serif;;
+                    font-size: 16px;
+                    color: #1b2725;
+                    @include font-bold();
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    span{
+                        font-size: 43px;
+                        padding-right: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .box-img{
+        overflow: hidden;
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: all .5s ease;
+            &:hover{
+                @include scale(1.1);
+                transition: all .5s ease;
+            }
+        }
+    }
+}
+/*
+    How We Work
+*/
+.how-we-work{
+    &.set-padding{
+        padding-bottom: 0;
+    }
+    .brick-title-v4{
+        text-align: left;
+        .brick-title-h3{
+            h3{
+                padding-bottom: 8px;
+            }
+        }
+        .brick-title-line{
+            margin-left: 0;
+        }
+    }
+    .box-step{
+        padding: 52px 0;
+        margin-bottom: -55px;
+        position: relative;
+        &:before, &:after{
+            content: '';
+            width: 65px;
+            height: 100%;
+            background: $primary-color-darkgreen;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+        &:before{
+            left: -65px;
+        }
+        &:after{
+            right: -65px;
+        }
+        .brick-flex-box{
+            align-items: flex-start;
+            .box-number{
+                h3{
+                    min-width: 102px;
+                    padding-right: 18px;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 72px;
+                    line-height: 55px;
+                    color: $default-text;
+                    opacity: .1;
+                    @include font-regular();
+                }
+            }
+            .box-content{
+                h3{
+                    padding-bottom: 15px;
+                    font-size: 25px;
+                    color: $default-text;
+                    @include font-semi-bold();
+                }
+                p{
+                    font-family: 'Titillium Web', sans-serif;
+                    font-size: 16px;
+                    color: #dcddde;
+                    @include font-regular();
+                }
+            }
+        }
+    }
+}
+/*
+    Awesome Video
+*/
+.awesome-video{
+    padding: 195px 0;
+    background: url('../images/index-4/awesome-video.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .brick-flex-box{
+        justify-content: center;
+        .box{
+            text-align: center;
+            span{
+                font-size: 72px;
+                color: #7a7c7d;
+                margin-bottom: 36px;
+            }
+            h3{
+                padding-bottom: 10px;
+                font-size: 48px;
+                line-height: 48px;
+                color: $default-text;
+                @include font-regular();
+            }
+            p{
+                font-size: 19px;
+                color: #dcddde;
+                @include font-regular();
+            }
+        }
+    }
+}
+/*
+    Our Projects
+*/
+.our-projects{
+    border-top: 1px solid #dcddde;
+    &.set-padding{
+        padding-bottom: 0;
+    }
+}

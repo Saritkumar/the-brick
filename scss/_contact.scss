@@ -1,0 +1,132 @@
+/*
+    Contact
+*/
+.contact{
+    &.set-padding{
+        padding-bottom: 0;
+    }
+    .main-office{
+        h3{
+            padding-bottom: 18px;
+            font-size: 33px;
+            line-height: 35px;
+            color: #1b2725;
+            @include font-black();
+        }
+        p{
+            padding-right: 150px;
+            font-size: 14px;
+            color: $second-text;
+            @include font-regular();
+        }
+        ul{
+            padding-top: 22px;
+            li{
+                padding-bottom: 15px;
+                .brick-flex-box{
+                    align-items: flex-start;
+                }
+                span{
+                    margin-top: 6px;
+                    padding-right: 15px;
+                    font-size: 14px;
+                    min-width: 30px;
+                }
+            }
+        }
+    }
+    .box-get-in-touch{
+        margin-bottom: -200px;
+        position: relative;
+        z-index: 9;
+        background: $default-text;
+        box-shadow: 0 0 49px rgba(0, 0, 0, .15);
+        padding: 45px 55px;
+        text-align: center;
+        >h3{
+            padding-bottom: 4px;
+            font-size: 33px;
+            line-height: 35px;
+            color: #1b2725;
+            @include font-black();
+        }
+        p{
+            padding-bottom: 47px;
+            font-size: 19px;
+            color: $second-text;
+            @include font-regular();
+        }
+        form{
+            .uk-form-icon{
+                width: 100%;
+                margin-bottom: 30px;
+                span{
+                    font-size: 14px;
+                    color: $second-text;
+                    position: absolute;
+                    top: 15px;
+                    left: 27px;
+                    opacity: .5;
+                }
+                input, textarea{
+                    padding-left: 50px !important;
+                    padding-right: 50px;
+                    padding-bottom: 7px;
+                    padding-top: 7px;
+                    width: 100%;
+                    background: #fafafa;
+                    border: 1px solid #dcddde;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 14px;
+                    outline: none;
+                    color: #1b2725;
+                    &::-webkit-input-placeholder {
+                        opacity: .5;
+                        color: $second-text;
+                    }
+                    &:-moz-placeholder {
+                        opacity: .5;
+                        color: $second-text;
+                    }
+                    &::-moz-placeholder {
+                        opacity: .5;
+                        color: $second-text;
+                    }
+                    &:-ms-input-placeholder {
+                        opacity: .5;
+                        color: $second-text !important;
+                    }
+                }
+                input{
+                    height: 45px;
+                    line-height: 45px;
+                    border-radius: 45px;
+                }
+                textarea{
+                    padding-top: 7px;
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+}
+/*
+    Google Map
+*/
+.gmap-contact{
+    .gmap-wrapper{
+        #gmap_contact{
+            height: 565px;
+            .gm-style{
+                .gm-style-iw{
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 14px;
+                    @include font-bold();
+                    color: $second-text;
+                    text-align: center;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+}

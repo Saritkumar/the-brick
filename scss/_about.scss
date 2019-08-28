@@ -1,0 +1,65 @@
+/*
+    Who We Are
+*/
+.who-we-are{
+    .box-img{
+        position: relative;
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        span{
+            font-size: 60px;
+            color: #1b2725;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include translate-xy(-50%, -50%);
+        }
+    }
+    .box{
+        padding-left: 30px;
+        .brick-title{
+            padding-bottom: 27px;
+        }
+        .box-content{
+            strong, p{
+                font-family: 'Quicksand', sans-serif;
+                font-size: 14px;
+                color: $second-text;
+            }
+            strong{
+                @include font-bold();
+            }
+            p{
+                padding-top: 12px;
+                padding-bottom: 35px;
+                @include font-light();
+            }
+            a{
+                font-family: 'Quicksand', sans-serif;
+                font-size: 14px;
+                @include font-bold();
+                position: relative;
+                &:hover{
+                    &:before{
+                        width: 100%;
+                        transition: all .5s ease;
+                    }
+                }
+                &:before{
+                    content: '';
+                    width: 0;
+                    height: 2px;
+                    background: $primary-color-yellow;
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    right: 0;
+                    transition: all .5s ease;
+                }
+            }
+        }
+    }
+}

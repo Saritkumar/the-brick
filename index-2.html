@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>The Birck Architechture & Construction - HTML Template</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="plugins/normalize.css" rel="stylesheet" type="text/css">
+        <link href="plugins/uikit-2.27.2/css/uikit.min.css" rel="stylesheet" type="text/css">
+        <link href="plugins/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="plugins/flat-icon/flaticon.css" rel="stylesheet" type="text/css">
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN PAGE COMPONENTS UIKIT -->
+        <link href="plugins/uikit-2.27.2/css/components/sticky.min.css" rel="stylesheet" type="text/css">
+        <link href="plugins/uikit-2.27.2/css/components/slider.min.css" rel="stylesheet" type="text/css">
+        <!-- END PAGE COMPONENTS UIKIT -->
+        <!-- BEGIN REVOLUTION SLIDER -->
+        <link rel="stylesheet" href="plugins/revolution/css/settings.css">
+        <link rel="stylesheet" href="plugins/revolution/css/layers.css">
+        <link rel="stylesheet" href="plugins/revolution/css/navigation.css">
+        <!-- END REVOLUTION SLIDER -->
+        <!-- BEGIN TEMPLATE LAYOUT STYLES -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <!-- END TEMPLATE LAYOUT STYLES -->
+        <link rel="shortcut icon" href="images/favicon.ico" />
+    </head>
+    <body>
+        <!-- BEGIN HEADER -->
+        <header class="header-v2" data-uk-sticky="{top: -500, animation: 'uk-animation-slide-top'}">
+            <div id="justify_mega" class="header">
+                <div class="uk-container uk-container-center">
+                    <div class="logo brick-flex-box">
+                        <a href="index.html"><img src="images/header/logo-drankgreen.png" alt=""></a>
+                    </div>
+                    <div class="brick-button brick-button-radius brick-button-drankgreen hidden-mobile">
+                        <a href="#"><h3>FREE QUOTE</h3></a>
+                    </div>
+                    <div class="search" data-uk-dropdown="{mode:'click', pos:'bottom-right'}">
+                        <a href="shop.html" class="cart-icon brick-hover-color-darkgreen"><span class="fa fa-shopping-cart"></span></a>
+                        <a href="#" class="search-icon brick-hover-color-darkgreen"><span class="fa fa-search"></span></a>
+                        <div class="uk-dropdown">
+                            <form id="search_form_one" class="uk-form" action="#" method="post">
+                                <input type="text" placeholder="Search...">
+                            </form>
+                        </div>
+                        <div class="toggle-icon">
+                            <a href="#" class="brick-hover-color-darkgreen"><span class="fa fa-bars"></span></a>
+                        </div>
+                    </div>
+                    <nav class="menu-primary uk-clearfix">
+                        <ul class="uk-navbar-nav uk-flex uk-flex-center main-menu">
+                            <li class="active uk-parent brick-hover-child-color-darkgreen" data-uk-dropdown="{remaintime:'0'}">
+                                <a href="index.html">HOME</a>
+                                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="brick-hover-child-color-darkgreen"><a href="index-2.html">HOME TWO<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                        <li class="brick-hover-child-color-darkgreen"><a href="index-3.html">HOME THREE<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                        <li class="brick-hover-child-color-darkgreen"><a href="index-4.html">HOME FOUR<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                        <li class="brick-hover-child-color-darkgreen"><a href="index-5.html">HOME FIVE<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                        <li class="brick-hover-child-color-darkgreen"><a href="index-6.html">HOME SIX<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="uk-parent brick-hover-child-color-darkgreen" data-uk-dropdown="{remaintime:'0'}">
+                                <a href="portfolio-1.html">PORTFOLIO</a>
+                                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="brick-hover-child-color-darkgreen"><a href="portfolio-2.html">PORTFOLIO TWO<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                        <li class="brick-hover-child-color-darkgreen"><a href="portfolio-detail.html">PORTFOLIO DETAIL<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="brick-hover-child-color-darkgreen"><a href="contact.html">CONTACT</a></li>
+                            <li class="uk-parent brick-hover-child-color-darkgreen" data-uk-dropdown="{remaintime:'0'}">
+                                <a href="blog-1.html">BLOG</a>
+                                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="brick-hover-child-color-darkgreen"><a href="blog-2.html">BLOG TWO<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                        <li class="brick-hover-child-color-darkgreen"><a href="blog-3.html">BLOG THREE<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                        <li class="brick-hover-child-color-darkgreen"><a href="blog-detail.html">BLOG DETAILS<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="uk-parent brick-hover-child-color-darkgreen" data-uk-dropdown="{remaintime:'0'}">
+                                <a href="shop.html">SHOP</a>
+                                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="brick-hover-child-color-darkgreen"><a href="product-detail.html">PRODUCT DETAIL<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="uk-parent brick-hover-child-color-darkgreen" data-uk-dropdown="{remaintime:'0'}">
+                                <a>PAGES</a>
+                                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="brick-hover-child-color-darkgreen"><a href="about.html">ABOUT US<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                        <li class="brick-hover-child-color-darkgreen"><a href="our-team.html">OUR TEAM<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                        <li class="brick-hover-child-color-darkgreen"><a href="clients-say.html">CLIENTS SAY<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                        <li class="brick-hover-child-color-darkgreen"><a href="faq.html">FAQ's<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                        <li class="brick-hover-child-color-darkgreen"><a href="coming-soon.html">COMING SOON<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                        <li class="brick-hover-child-color-darkgreen"><a href="maintenance.html">MAINTENANCE PAGE<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mega-menu uk-parent brick-hover-child-color-darkgreen" data-uk-dropdown="{remaintime:'0', justify:'#justify_mega'}">
+                                <a href="#">MEGA</a>
+                                <div class="uk-dropdown">
+                                    <div class="uk-container uk-container-center">
+                                        <div class="uk-grid">
+                                            <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-width-1-1">
+                                                <div class="submenu">
+                                                    <div class="submenu-title">
+                                                        <h5>SUB MENU 01</h5>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="brick-hover-child-color-darkgreen"><a href="#">Sub menu 01-01<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                                        <li class="brick-hover-child-color-darkgreen"><a href="#">Sub menu 01-02<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-width-1-1">
+                                                <div class="submenu">
+                                                    <div class="submenu-title">
+                                                        <h5>SUB MENU 02</h5>
+                                                        <div class="omb-line omb-line-orange"></div>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="brick-hover-child-color-darkgreen"><a href="#">Sub menu 02-01<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                                        <li class="brick-hover-child-color-darkgreen"><a href="#">Sub menu 02-02<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-width-1-1">
+                                                <div class="submenu">
+                                                    <div class="submenu-title">
+                                                        <h5>SUB MENU 03</h5>
+                                                        <div class="omb-line omb-line-orange"></div>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="brick-hover-child-color-darkgreen"><a href="#">Sub menu 03-01<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                                        <li class="brick-hover-child-color-darkgreen"><a href="#">Sub menu 03-02<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-width-1-1">
+                                                <div class="submenu">
+                                                    <div class="submenu-title">
+                                                        <h5>SUB MENU 04</h5>
+                                                        <div class="omb-line omb-line-orange"></div>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="brick-hover-child-color-darkgreen"><a href="#">Sub menu 04-01<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                                        <li class="brick-hover-child-color-darkgreen"><a href="#">Sub menu 04-02<i class="fa fa-hand-o-right brick-color-darkgreen"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <nav class="nav-holder">
+                    <ul>
+                        <li class="has-submenu brick-hover-child-color-darkgreen">
+                            <a href="index.html">HOME</a>
+                            <ul class="submenu">
+                                <li class="brick-hover-child-color-darkgreen"><a href="index-2.html">Home two</a></li>
+                                <li class="brick-hover-child-color-darkgreen"><a href="index-3.html">Home three</a></li>
+                                <li class="brick-hover-child-color-darkgreen"><a href="index-4.html">Home four</a></li>
+                                <li class="brick-hover-child-color-darkgreen"><a href="index-5.html">Home five</a></li>
+                                <li class="brick-hover-child-color-darkgreen"><a href="index-6.html">Home six</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu brick-hover-child-color-darkgreen">
+                            <a href="portfolio-1.html">PORTFOLIO</a>
+                            <ul class="submenu">
+                                <li class="brick-hover-child-color-darkgreen"><a href="portfolio-2.html">Portfolio two</a></li>
+                                <li class="brick-hover-child-color-darkgreen"><a href="portfolio-detail.html">Portfolio detail </a></li>
+                            </ul>
+                        </li>
+                        <li class="brick-hover-child-color-darkgreen"><a href="contact.html">CONTACT</a></li>
+                        <li class="has-submenu brick-hover-child-color-darkgreen">
+                            <a href="blog-1.html">BLOG</a>
+                            <ul class="submenu">
+                                <li class="brick-hover-child-color-darkgreen"><a href="blog-2.html">Blog two</a></li>
+                                <li class="brick-hover-child-color-darkgreen"><a href="blog-3.html">Blog three</a></li>
+                                <li class="brick-hover-child-color-darkgreen"><a href="blog-detail.html">Blog detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu brick-hover-child-color-darkgreen">
+                            <a href="shop.html">SHOP</a>
+                            <ul class="submenu">
+                                <li class="brick-hover-child-color-darkgreen"><a href="product-detail.html">Product detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu brick-hover-child-color-darkgreen">
+                            <a>PAGES</a>
+                            <ul class="submenu">
+                                <li class="brick-hover-child-color-darkgreen"><a href="about.html">About us</a></li>
+                                <li class="brick-hover-child-color-darkgreen"><a href="our-team.html">Our team</a></li>
+                                <li class="brick-hover-child-color-darkgreen"><a href="clients-say.html">Clients say</a></li>
+                                <li class="brick-hover-child-color-darkgreen"><a href="faq.html">FAQ's</a></li>
+                                <li class="brick-hover-child-color-darkgreen"><a href="coming-soon.html">Coming soon</a></li>
+                                <li class="brick-hover-child-color-darkgreen"><a href="maintenance.html">Maintenance page</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- END HEADER -->
+        <!-- BEGIN CONTAINER -->
+        <!-- BEGIN SLIDER -->
+        <section class="rev_slider_wrapper slider-home-two">
+            <div id="slider_home_two" class="rev_slider"  data-version="5.0">
+                <ul>
+                    <li data-transition="zoomout" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" >
+                        <img src="images/slider/04.jpg"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina/>
+                        <div class="tp-caption tp-resizeme banner-caption-h3" 
+                             data-x="['left','left','center','center']"
+                             data-hoffset="['15','15','0','0']" 
+                             data-y="center" 
+                             data-voffset="['-151','-151','-101','-101']" 
+                             data-transform_idle="o:1;"         
+                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
+                             data-splitin="none" 
+                             data-splitout="none"
+                             data-responsive_offset="on"
+                             data-start="700">
+                            WE BUILDING
+                        </div>
+                        <div class="tp-caption tp-resizeme banner-caption-h1" 
+                             data-x="['left','left','center','center']"
+                             data-hoffset="['15','15','0','0']" 
+                             data-y="center" 
+                             data-voffset="['-108','-108','-58','-58']" 
+                             data-transform_idle="o:1;"         
+                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
+                             data-splitin="none" 
+                             data-splitout="none"
+                             data-responsive_offset="on"
+                             data-start="700">
+                            THE WORLD
+                        </div>
+                        <div class="tp-caption tp-resizeme banner-caption-p" 
+                             data-x="['left','left','center','center']"
+                             data-hoffset="['15','15','0','0']" 
+                             data-y="center" 
+                             data-voffset="['-40','-40','10','10']" 
+                             data-transform_idle="o:1;"         
+                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
+                             data-splitin="none" 
+                             data-splitout="none"
+                             data-responsive_offset="on"
+                             data-start="700">
+                            The road to success is always under construction.
+                        </div>
+                        <div class="tp-caption tp-resizeme banner-caption-button" 
+                             data-x="['left','left','center','center']"
+                             data-hoffset="['15','15','0','0']" 
+                             data-y="center" 
+                             data-voffset="['59','59','109','109']" 
+                             data-transform_idle="o:1;"         
+                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
+                             data-splitin="none" 
+                             data-splitout="none"
+                             data-responsive_offset="on"
+                             data-start="700">
+                            <a href="#">READ MORE</a>
+                        </div>
+                    </li>
+                    <li data-transition="zoomout" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" >
+                        <img src="images/slider/04.jpg"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina/>
+                        <div class="tp-caption tp-resizeme banner-caption-h3" 
+                             data-x="['left','left','center','center']"
+                             data-hoffset="['15','15','0','0']" 
+                             data-y="center" 
+                             data-voffset="['-151','-151','-101','-101']" 
+                             data-transform_idle="o:1;"         
+                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
+                             data-splitin="none" 
+                             data-splitout="none"
+                             data-responsive_offset="on"
+                             data-start="700">
+                            WE BUILDING
+                        </div>
+                        <div class="tp-caption tp-resizeme banner-caption-h1" 
+                             data-x="['left','left','center','center']"
+                             data-hoffset="['15','15','0','0']" 
+                             data-y="center" 
+                             data-voffset="['-108','-108','-58','-58']" 
+                             data-transform_idle="o:1;"         
+                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
+                             data-splitin="none" 
+                             data-splitout="none"
+                             data-responsive_offset="on"
+                             data-start="700">
+                            THE WORLD
+                        </div>
+                        <div class="tp-caption tp-resizeme banner-caption-p" 
+                             data-x="['left','left','center','center']"
+                             data-hoffset="['15','15','0','0']" 
+                             data-y="center" 
+                             data-voffset="['-40','-40','10','10']" 
+                             data-transform_idle="o:1;"         
+                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
+                             data-splitin="none" 
+                             data-splitout="none"
+                             data-responsive_offset="on"
+                             data-start="700">
+                            The road to success is always under construction.
+                        </div>
+                        <div class="tp-caption tp-resizeme banner-caption-button" 
+                             data-x="['left','left','center','center']"
+                             data-hoffset="['15','15','0','0']" 
+                             data-y="center" 
+                             data-voffset="['59','59','109','109']" 
+                             data-transform_idle="o:1;"         
+                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
+                             data-splitin="none" 
+                             data-splitout="none"
+                             data-responsive_offset="on"
+                             data-start="700">
+                            <a href="#">READ MORE</a>
+                        </div>
+                    </li>
+                    <li data-transition="zoomout" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" >
+                        <img src="images/slider/04.jpg"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina/>
+                        <div class="tp-caption tp-resizeme banner-caption-h3" 
+                             data-x="['left','left','center','center']"
+                             data-hoffset="['15','15','0','0']" 
+                             data-y="center" 
+                             data-voffset="['-151','-151','-101','-101']" 
+                             data-transform_idle="o:1;"         
+                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
+                             data-splitin="none" 
+                             data-splitout="none"
+                             data-responsive_offset="on"
+                             data-start="700">
+                            WE BUILDING
+                        </div>
+                        <div class="tp-caption tp-resizeme banner-caption-h1" 
+                             data-x="['left','left','center','center']"
+                             data-hoffset="['15','15','0','0']" 
+                             data-y="center" 
+                             data-voffset="['-108','-108','-58','-58']" 
+                             data-transform_idle="o:1;"         
+                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
+                             data-splitin="none" 
+                             data-splitout="none"
+                             data-responsive_offset="on"
+                             data-start="700">
+                            THE WORLD
+                        </div>
+                        <div class="tp-caption tp-resizeme banner-caption-p" 
+                             data-x="['left','left','center','center']"
+                             data-hoffset="['15','15','0','0']" 
+                             data-y="center" 
+                             data-voffset="['-40','-40','10','10']" 
+                             data-transform_idle="o:1;"         
+                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
+                             data-splitin="none" 
+                             data-splitout="none"
+                             data-responsive_offset="on"
+                             data-start="700">
+                            The road to success is always under construction.
+                        </div>
+                        <div class="tp-caption tp-resizeme banner-caption-button" 
+                             data-x="['left','left','center','center']"
+                             data-hoffset="['15','15','0','0']" 
+                             data-y="center" 
+                             data-voffset="['59','59','109','109']" 
+                             data-transform_idle="o:1;"         
+                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
+                             data-splitin="none" 
+                             data-splitout="none"
+                             data-responsive_offset="on"
+                             data-start="700">
+                            <a href="#">READ MORE</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- END SLIDER -->
+        <!-- BEGIN WE ARE THE BRICK -->
+        <section class="we-are-brick set-padding">
+            <div class="uk-container uk-container-center">
+                <div class="uk-grid">
+                    <div class="uk-width-medium-3-5 uk-width-small-1-1 uk-width-1-1">
+                        <div class="box">
+                            <div class="box-title">
+                                <h3>Hello! We are The Brick</h3>
+                            </div>
+                            <div class="box-content">
+                                <strong>Integer posuere ligula nibh, eu faucibus est accumsan eu. In posuere convallis justo, acornare libero ultrices nec. Proin pharetra justo quis nulla mollis pulvinar.</strong>
+                                <p>In sagittis ullamcorper diam, eget blandit elit lobortis eu. Nam eu tortor ut tortor mattis acumsan. Maecenas tincidunt libero elit, in auctor velit bibendum laoreet. Cras in efficitur augue. Sed egestas odio nec eros scelerisque porttitor.</p>
+                            </div>
+                            <div class="box-go-brick">
+                                <a href="#"><h3 class="brick-color-darkgreen">About The Brick</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-medium-2-5 uk-width-small-1-1 uk-width-1-1">
+                        <div class="videos">
+                            <div class="box-img">
+                                <img src="images/index-2/we-are-brick-video.jpg" alt="">
+								<a href="#" class="brick-hover-child-color-darkgreen"><span class="fa fa-play-circle-o"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END WE ARE THE BRICK -->
+        <!-- BEGIN THE BRICK -->
+        <section class="the-brick">
+            <div class="count-to-number">
+                <div class="uk-container uk-container-center">
+                    <div class="uk-grid">
+                        <div class="uk-width-medium-1-4 uk-width-small-1-2 uk-width-1-1">
+                            <div class="box">
+                                <div class="box-number">
+                                    <h3 class="counter">1920</h3>
+                                    <p>Customers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-medium-1-4 uk-width-small-1-2 uk-width-1-1">
+                            <div class="box">
+                                <div class="box-number">
+                                    <h3 class="counter">2531</h3>
+                                </div>
+                                <div class="box-caption">
+                                    <p>Projects</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-medium-1-4 uk-width-small-1-2 uk-width-1-1">
+                            <div class="box">
+                                <div class="box-number">
+                                    <h3 class="counter">59</h3>
+                                </div>
+                                <div class="box-caption">
+                                    <p>Experts</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-medium-1-4 uk-width-small-1-2 uk-width-1-1">
+                            <div class="box">
+                                <div class="box-number">
+                                    <h3 class="counter">856</h3>
+                                </div>
+                                <div class="box-caption">
+                                    <p>Comparics</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="the-brick-content">
+                <div class="box-img">
+                    <img src="images/index-2/the-brick.jpg" alt="">
+                </div>
+                <div class="brick-flex-box">
+                    <div class="box-content">
+                        <h1 class="brick-color-darkgreen">THE BRICK</h1>
+                        <h3>TOGETHER WE CHANGE</h3>
+                        <h5>THE WORLD</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END THE BRICK -->
+        <!-- BEGIN OUR SERVICES -->
+        <section class="our-services-v2 set-padding">
+            <div class="uk-container uk-container-center">
+                <div class="brick-title-v2">
+                    <div class="brick-title-h3">
+                        <h3>Our Services</h3>
+                    </div>
+                    <div class="brick-title-p">
+                        <p>Integer posuere ligula nibh, eu faucibus est accumsan eu. In posuere convallis</p>
+                    </div>
+                </div>
+                <div class="uk-grid">
+                    <div class="uk-width-medium-1-3 uk-width-small-1-2 uk-width-1-1">
+                        <div class="box brick-hover-full-color-darkgree">
+                            <div class="box-icon">
+                                <span class="flaticon flaticon-concrete-mixer"></span>
+                            </div>
+                            <div class="box-content">
+                                <div class="box-content-h3">
+                                    <a href="#"><h3>Construction</h3></a>
+                                </div>
+                                <div class="box-content-p">
+                                    <p>Praesent ut est dui integer augue eros, dapibus sit amet tincidunt sed, blandit id elit. Mauris leo justo, suscipit id diam vel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-medium-1-3 uk-width-small-1-2 uk-width-1-1">
+                        <div class="box brick-hover-full-color-darkgree">
+                            <div class="box-icon">
+                                <span class="flaticon flaticon-crane"></span>
+                            </div>
+                            <div class="box-content">
+                                <div class="box-content-h3">
+                                    <a href="#"><h3>Building</h3></a>
+                                </div>
+                                <div class="box-content-p">
+                                    <p>Praesent ut est dui integer augue eros, dapibus sit amet tincidunt sed, blandit id elit. Mauris leo justo, suscipit id diam vel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-medium-1-3 uk-width-small-1-2 uk-width-1-1">
+                        <div class="box brick-hover-full-color-darkgree">
+                            <div class="box-icon">
+                                <span class="flaticon flaticon-compass"></span>
+                            </div>
+                            <div class="box-content">
+                                <div class="box-content-h3">
+                                    <a href="#"><h3>Architecture</h3></a>
+                                </div>
+                                <div class="box-content-p">
+                                    <p>Praesent ut est dui integer augue eros, dapibus sit amet tincidunt sed, blandit id elit. Mauris leo justo, suscipit id diam vel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-medium-1-3 uk-width-small-1-2 uk-width-1-1">
+                        <div class="box brick-hover-full-color-darkgree">
+                            <div class="box-icon">
+                                <span class="flaticon flaticon-paint-brush"></span>
+                            </div>
+                            <div class="box-content">
+                                <div class="box-content-h3">
+                                    <a href="#"><h3>Design</h3></a>
+                                </div>
+                                <div class="box-content-p">
+                                    <p>Praesent ut est dui integer augue eros, dapibus sit amet tincidunt sed, blandit id elit. Mauris leo justo, suscipit id diam vel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-medium-1-3 uk-width-small-1-2 uk-width-1-1">
+                        <div class="box brick-hover-full-color-darkgree">
+                            <div class="box-icon">
+                                <span class="flaticon flaticon-set-square"></span>
+                            </div>
+                            <div class="box-content">
+                                <div class="box-content-h3">
+                                    <a href="#"><h3>Rebuild</h3></a>
+                                </div>
+                                <div class="box-content-p">
+                                    <p>Praesent ut est dui integer augue eros, dapibus sit amet tincidunt sed, blandit id elit. Mauris leo justo, suscipit id diam vel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-medium-1-3 uk-width-small-1-2 uk-width-1-1">
+                        <div class="box brick-hover-full-color-darkgree">
+                            <div class="box-icon">
+                                <span class="flaticon flaticon-truck"></span>
+                            </div>
+                            <div class="box-content">
+                                <div class="box-content-h3">
+                                    <a href="#"><h3>Transport</h3></a>
+                                </div>
+                                <div class="box-content-p">
+                                    <p>Praesent ut est dui integer augue eros, dapibus sit amet tincidunt sed, blandit id elit. Mauris leo justo, suscipit id diam vel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END OUR SERVICES -->
+        <!-- BEGIN TESTIMONIAL -->
+        <section class="testimonial">
+            <div class="uk-container uk-container-center">
+                <div data-uk-slider="{autoplay: true, autoplayInterval: 4000}">
+                    <div class="uk-slider-container">
+                        <ul class="uk-slider uk-grid uk-grid-match uk-grid-width-medium-1-1 uk-grid-width-small-1-1 uk-grid-width-1-1">
+                            <li>
+                                <div class="box">
+                                    <h3>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."</h3>
+                                    <i class="fa fa-quote-left"></i>
+                                    <a href="#"><p>John Doe</p></a>
+                                    <span>designer</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box">
+                                    <h3>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."</h3>
+                                    <i class="fa fa-quote-left"></i>
+                                    <a href="#"><p>Linsay Lohan</p></a>
+                                    <span>ceo</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box">
+                                    <h3>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."</h3>
+                                    <i class="fa fa-quote-left"></i>
+                                    <a href="#"><p>Jennifer Lawrence</p></a>
+                                    <span>marketing</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box">
+                                    <h3>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."</h3>
+                                    <i class="fa fa-quote-left"></i>
+                                    <a href="#"><p>Jessica Alba</p></a>
+                                    <span>designer</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END TESTIMONIAL -->
+        <!-- BEGIN PORTFOLIO -->
+        <section class="portfolio">
+            <div class="uk-grid uk-grid-collapse">
+                <div class="uk-width-medium-1-5 uk-width-small-1-2 uk-width-1-1">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="images/index-2/portfolio-1-1.jpg" alt="">
+                        </div>
+                        <div class="brick-flex-box brick-background-darkgreen">
+                            <div class="box-text-overlay">
+                                <a href="#"><h3>The Building House</h3></a>
+                                <p>Building</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-medium-1-5 uk-width-small-1-2 uk-width-1-1">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="images/index-2/portfolio-1-2.jpg" alt="">
+                        </div>
+                        <div class="brick-flex-box brick-background-darkgreen">
+                            <div class="box-text-overlay">
+                                <a href="#"><h3>The Building House</h3></a>
+                                <p>Building</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-medium-1-5 uk-width-small-1-2 uk-width-1-1">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="images/index-2/portfolio-1-3.jpg" alt="">
+                        </div>
+                        <div class="brick-flex-box brick-background-darkgreen">
+                            <div class="box-text-overlay">
+                                <a href="#"><h3>The Building House</h3></a>
+                                <p>Building</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-medium-1-5 uk-width-small-1-2 uk-width-1-1">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="images/index-2/portfolio-1-4.jpg" alt="">
+                        </div>
+                        <div class="brick-flex-box brick-background-darkgreen">
+                            <div class="box-text-overlay">
+                                <a href="#"><h3>The Building House</h3></a>
+                                <p>Building</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-medium-1-5 uk-width-small-1-2 uk-width-1-1">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="images/index-2/portfolio-1-5.jpg" alt="">
+                        </div>
+                        <div class="brick-flex-box brick-background-darkgreen">
+                            <div class="box-text-overlay">
+                                <a href="#"><h3>The Building House</h3></a>
+                                <p>Building</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-medium-1-5 uk-width-small-1-2 uk-width-1-1">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="images/index-2/portfolio-2-1.jpg" alt="">
+                        </div>
+                        <div class="brick-flex-box brick-background-darkgreen">
+                            <div class="box-text-overlay">
+                                <a href="#"><h3>The Building House</h3></a>
+                                <p>Building</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-medium-1-5 uk-width-small-1-2 uk-width-1-1">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="images/index-2/portfolio-2-2.jpg" alt="">
+                        </div>
+                        <div class="brick-flex-box brick-background-darkgreen">
+                            <div class="box-text-overlay">
+                                <a href="#"><h3>The Building House</h3></a>
+                                <p>Building</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-medium-1-5 uk-width-small-1-2 uk-width-1-1">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="images/index-2/portfolio-2-3.jpg" alt="">
+                        </div>
+                        <div class="brick-flex-box brick-background-darkgreen">
+                            <div class="box-text-overlay">
+                                <a href="#"><h3>The Building House</h3></a>
+                                <p>Building</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-medium-1-5 uk-width-small-1-2 uk-width-1-1">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="images/index-2/portfolio-2-4.jpg" alt="">
+                        </div>
+                        <div class="brick-flex-box brick-background-darkgreen">
+                            <div class="box-text-overlay">
+                                <a href="#"><h3>The Building House</h3></a>
+                                <p>Building</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-medium-1-5 uk-width-small-1-2 uk-width-1-1">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="images/index-2/portfolio-2-5.jpg" alt="">
+                        </div>
+                        <div class="brick-flex-box brick-background-darkgreen">
+                            <div class="box-text-overlay">
+                                <a href="#"><h3>The Building House</h3></a>
+                                <p>Building</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END PORTFOLIO -->
+        <!-- BEGIN MEET OUR TEAM -->
+        <section class="meet-our-team set-padding">
+            <div class="uk-container uk-container-center">
+                <div class="brick-title-v2">
+                    <div class="brick-title-h3">
+                        <h3>Meet Our Team</h3>
+                    </div>
+                    <div class="brick-title-p">
+                        <p>Integer posuere ligula nibh, eu faucibus est accumsan eu. In posuere convallis</p>
+                    </div>
+                </div>
+                <div data-uk-slider="{autoplay: true, autoplayInterval: 4000}">
+                    <div class="uk-slider-container">
+                        <ul class="uk-slider uk-grid uk-grid-match uk-grid-width-medium-1-4 uk-grid-width-small-1-2 uk-grid-width-1-1">
+                            <li>
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="images/index-2/meet-our-team-1.jpg" alt="">
+                                    </div>
+                                    <div class="box-team-member brick-background-darkgreen">
+                                        <a href="#"><h3>Michanel Blue</h3></a>
+                                        <p>Director</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="images/index-2/meet-our-team-2.jpg" alt="">
+                                    </div>
+                                    <div class="box-team-member brick-background-darkgreen">
+                                        <a href="#"><h3>Linsay Lohan</h3></a>
+                                        <p>CEO</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="images/index-2/meet-our-team-3.jpg" alt="">
+                                    </div>
+                                    <div class="box-team-member brick-background-darkgreen">
+                                        <a href="#"><h3>Jennifer Lawrence</h3></a>
+                                        <p>Marketing</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="images/index-2/meet-our-team-4.jpg" alt="">
+                                    </div>
+                                    <div class="box-team-member brick-background-darkgreen">
+                                        <a href="#"><h3>Jessica Alba</h3></a>
+                                        <p>Designer</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END MET OUR TEAM -->
+        <!-- BEGIN WE MAKE BEAUTY -->
+        <section class="we-make-beauty">
+            <div class="uk-container uk-container-center">
+                <div class="box">
+                    <div class="box-text">
+                        <h3>We Make Beauty</h3>
+                        <p>Aliquam vitae dui non lorem dictum finibus in sed dui.</p>
+                    </div>
+                    <div class="brick-button">
+                        <a href="#"><h3>FREE QUOTE</h3></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END WE MAKE BEAUTY -->
+        <!-- END LATEST NEWS -->
+        <section class="latest-news-v2 set-padding">
+            <div class="uk-container uk-container-center">
+                <div class="brick-title-v2">
+                    <div class="brick-title-h3">
+                        <h3>Latest News</h3>
+                    </div>
+                    <div class="brick-title-p">
+                        <p>Integer posuere ligula nibh, eu faucibus est accumsan eu. In posuere convallis</p>
+                    </div>
+                </div>
+                <div data-uk-slider="{autoplay: false, autoplayInterval: 4000}">
+                    <div class="uk-slider-container">
+                        <ul class="uk-slider uk-grid uk-grid-match uk-grid-width-medium-1-3 uk-grid-width-small-1-2 uk-grid-width-1-1">
+                            <li>
+                                <div class="box">
+                                    <div class="box-img">
+                                        <a href="#"><img src="images/index-2/latest-news-1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="box-content">
+                                        <div class="box-content-p">
+                                            <p class="brick-color-darkgreen">Construction</p>
+                                        </div>
+                                        <div class="box-content-title">
+                                            <a href="#" class="brick-hover-child-color-darkgreen"><h3>Explains simple house construction tips for new House owners</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box">
+                                    <div class="box-img">
+                                        <a href="#"><img src="images/index-2/latest-news-2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="box-content">
+                                        <div class="box-content-p">
+                                            <p class="brick-color-darkgreen">Construction</p>
+                                        </div>
+                                        <div class="box-content-title">
+                                            <a href="#" class="brick-hover-child-color-darkgreen"><h3>10 Survival tips for Architecture Students, The Life of a Designer</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box">
+                                    <div class="box-img">
+                                        <a href="#"><img src="images/index-2/latest-news-3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="box-content">
+                                        <div class="box-content-p">
+                                            <p class="brick-color-darkgreen">Construction</p>
+                                        </div>
+                                        <div class="box-content-title">
+                                            <a href="#" class="brick-hover-child-color-darkgreen"><h3>5 Kick Ass Tips for Architecture Students from the Experts</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box">
+                                    <div class="box-img">
+                                        <a href="#"><img src="images/index-2/latest-news-2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="box-content">
+                                        <div class="box-content-p">
+                                            <p class="brick-color-darkgreen">Construction</p>
+                                        </div>
+                                        <div class="box-content-title">
+                                            <a href="#" class="brick-hover-child-color-darkgreen"><h3>10 Survival tips for Architecture Students, The Life of a Designer</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- BEGIN LATEST NEWS -->
+        <!-- BEGIN CAROUSEL -->
+        <section class="carousel-v2">
+            <div class="uk-container uk-container-center">
+                <div data-uk-slider="{center: true, autoplay: true, autoplayInterval: 4000}">
+                    <div class="uk-slider-container">
+                        <ul class="uk-slider uk-grid uk-grid-match uk-grid-width-medium-1-5 uk-grid-width-small-1-3 uk-grid-width-1-1">
+                            <li>
+                                <div class="box-img">
+                                    <img src="images/index-1/carousel-1.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box-img">
+                                    <img src="images/index-1/carousel-2.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box-img">
+                                    <img src="images/index-1/carousel-3.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box-img">
+                                    <img src="images/index-1/carousel-4.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box-img">
+                                    <img src="images/index-1/carousel-1.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END CAROUSEL -->
+        <!-- END CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        <footer class="footer-v2">
+            <div class="footer">
+                <div class="uk-container uk-container-center">
+                    <div class="box">
+                        <div class="box-logo">
+                            <a href="index.html"><img src="images/footer/logo-darkgreen.png" alt=""></a>
+                        </div>
+                        <div class="box-content">
+                            <div class="box-content-p">
+                                <p>Vestibulum iaculis rhoncus lacus, eu venenat massa hendrerit non. Sed dignissim nec duised dignissim. Etiam nec arcu mauris. Donec rhoncus lorem quam, a mollis tellus. venenat massa hendrerit non. Sed dignissim nec duised dignissim.</p>
+                            </div>
+                            <div class="box-content-social">
+                                <ul>
+                                    <li class="brick-hover-child-color-darkgreen"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                    <li  class="brick-hover-child-color-darkgreen"><a href="#"><span class="fa fa-vimeo"></span></a></li>
+                                    <li  class="brick-hover-child-color-darkgreen"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                    <li  class="brick-hover-child-color-darkgreen"><a href="#"><span class="fa fa-instagram"></span></a></li>
+                                    <li  class="brick-hover-child-color-darkgreen"><a href="#"><span class="fa fa-google"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy;<span>The Brick</span>, All rights reserved</p>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+        <div class="brick-backtotop brick-background-darkgreen" data-uk-smooth-scroll><span class="fa fa-arrow-up"></span></div>
+        <!-- BEGIN JQUERY JS -->
+        <script src="plugins/jquery/jquery-1.12.4.min.js"></script>
+        <script src="plugins/uikit-2.27.2/js/uikit.min.js" type="text/javascript"></script>
+        <script src="plugins/jquery-waypoints/2.0.3/waypoints.min.js" type="text/javascript"></script>
+        <script src="plugins/jquery-count-to-number/jquery.counterup.min.js" type="text/javascript"></script>
+        <!-- END JQUERY JS -->
+        <!-- BEGIN COMPONENT UIKIT-->
+        <script src="plugins/uikit-2.27.2/js/components/sticky.min.js" type="text/javascript"></script>
+        <script src="plugins/uikit-2.27.2/js/components/slider.min.js" type="text/javascript"></script>
+        <!-- END COMPONENT UIKIT-->
+        <!-- BEGIN REVOLUTION SLIDER -->
+        <script src="plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script src="plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script src="plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script src="plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script src="plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+        <script src="plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script src="plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+        <!-- END REVOLUTION SLIDER -->
+        <!-- BEGIN MAIN JS -->
+        <script src="js/main.js"></script>
+        <!-- END MAIN JS  -->
+    </body>
+</html>

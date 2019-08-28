@@ -1,0 +1,252 @@
+/*
+    Product Detail
+*/
+.product-detail{
+    .box-detail{
+        .box-product-detail{
+            float: left;
+            width: 45%;
+            li{
+                outline: none;
+                .box-img, .box-thumbanil{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #fafafa;
+                    border: 1px solid #dcddde;
+                    border-radius: 5px;
+                    margin: 0 10px;
+                    img{
+                        display: block;
+                    }
+                }
+            }
+            .slick-big-images{
+                margin-bottom: 20px;
+                li{
+                    .box-img{
+                        height: 260px;
+                    }
+                }
+            }
+            .slick-thumbnail-images{
+                li{
+                    &.slick-current{
+                        .box-thumbanil{
+                            border: 1px solid $primary-color-yellow;
+                        }
+                    }
+                    .box-thumbanil{
+                        height: 77px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .box-detail-content{
+            width: 55%;
+            float: right;
+            padding-left: 30px;
+            >h3{
+                padding-bottom: 5px;
+                font-size: 33px;
+                line-height: 35px;
+                color: #1b2725;
+                @include font-bold();
+            }
+            p{
+                padding-bottom: 5px;
+                font-size: 14px;
+                color: $second-text;
+                @include font-regular();
+                &.price{
+                    @include font-bold();
+                }
+                i{
+                    padding-right: 15px;
+                    color: #7a7c7d;
+                    text-decoration: line-through;
+                }
+            }
+            ul.rating{
+                margin-bottom: 8px;
+                li{
+                    span{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .box-qty{
+                margin-top: 17px;
+                margin-bottom: 50px;
+                width: 100px;
+                position: relative;
+                button{
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 14px;
+                    @include font-regular();
+                    color: rgba($second-text, .5);
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 28px;
+                    text-align: center;
+                    border: 1px solid #dcddde;
+                    background: #fafafa;
+                    outline: none;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    cursor: pointer;
+                    &:hover{
+                        color: rgba($second-text, 1);
+                    }
+                    &.qty-minus{
+                        left: 0;
+                    }
+                    &.qty-plus{
+                        right: 0;
+                    }
+                }
+                input{
+                    width: 100%;
+                    height: 30px;
+                    text-align: center;
+                    border: 1px solid #dcddde;
+                    background: #fafafa;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 14px;
+                    @include font-regular();
+                    color: $second-text;
+                }
+            }
+            .brick-button{
+                h3{
+                    letter-spacing: 2px;
+                    padding: 0 30px;
+                }
+            }
+        }
+    }
+    .box-review{
+        margin-top: 65px;
+        .uk-subnav{
+            background: #fafafa;
+            border: 1px solid #dcddde;
+            margin-left: 0px;
+            margin-top: 0px;
+            li{
+                padding: 0px;
+                margin: 0px;
+                a{
+                    font-family: 'Titillium Web', sans-serif;
+                    @include font-bold();
+                    line-height: 43px;
+                    display: inline-block;
+                    font-size: 14px;
+                    color: $second-text;
+                    padding: 0 32px;
+                }
+            }
+        }
+        .uk-subnav-pill>.uk-active>*{
+            background: $second-text;
+            color: #ffffff;
+        }
+        .uk-switcher{
+            padding: 25px 45px 35px 45px;
+            text-align: left;
+            border: 1px solid #dcddde;
+            border-top: none;
+            .product-description{
+                p{
+                    font-size: 14px;
+                    color: $second-text;
+                    @include font-regular();
+                }
+            }
+            .poduct-reviews{
+                h3{
+                    padding-bottom: 15px;
+                    font-size: 30px;
+                    line-height: 36px;
+                    color: #1b2725;
+                    @include font-black();
+                }
+                li{
+                    &:last-child{
+                        margin-bottom: 30px;
+                    }
+                    .review{
+                        padding: 15px 0;
+                        border-bottom: 1px solid #dcddde;
+                        h6{
+                            font-size: 14px;
+                            color: $second-text;
+                            @include font-bold();
+                        }
+                        p{
+                            font-size: 13px;
+                            color: $second-text;
+                            @include font-regular();
+                        }
+                    }
+                }
+                .form-comment{
+                    form{
+                        h5{
+                            font-size: 16px;
+                            color: #1b2725;
+                            @include font-regular();
+                        }
+                        input, textarea{
+                            font-family: 'Quciksand', sans-serif;
+                            font-size: 14px;
+                            color: #1b2725;
+                            @include font-regular();
+                            border: 1px solid #dcddde;
+                            outline: none;
+                            background: transparent;
+                            margin-bottom: 20px;
+                            padding: 7px 20px;
+                            &:focus{
+                                border: 1px solid $primary-color-yellow;
+                            }
+                        }
+                        input{
+                            height: 40px;
+                            line-height: 40px;
+                        }
+                        .jq-ry-container{
+                            padding: 0px;
+                            padding-bottom: 15px;
+                            width: 100px!important;
+                            >.jq-ry-group-wrapper{
+                                >.jq-ry-group{
+                                    >svg{
+                                        width: 20px;
+                                        height: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .related-product{
+        @extend .shop;
+        margin-top: 68px;
+        h3{
+            padding-bottom: 30px;
+            font-size: 25px;
+            line-height: 30px;
+            color: #1b2725;
+            @include font-black();
+        }
+        .box-products{
+            margin-bottom: 0;
+        }
+    }
+}

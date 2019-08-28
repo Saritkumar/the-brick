@@ -1,0 +1,196 @@
+/*
+    Blog Detail
+*/
+.blog-detail{
+    @extend .latest-news;
+    .box{
+        border-bottom: 1px solid #dcddde;
+        .tags-share{
+            margin-bottom: 9px;
+            margin-top: 26px;
+            h3{
+                display: inline-block;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 12px;
+                color: #1b2725;
+                @include font-bold();
+            }
+            ul{
+                display: inline-block;
+                li{
+                    display: inline-block;
+                    a{
+                        font-family: 'Quicksand', sans-serif;
+                        font-size: 12px;
+                        color: #1b2725;
+                        @include font-regular();
+                        span{
+                            padding-right: 7px;
+                            &.fa-facebook{
+                                color: #166bb2;
+                            }
+                            &.fa-twitter{
+                                color: #0eb5f3;
+                            }
+                            &.fa-vimeo{
+                                color: #0e8cc1;
+                            }
+                        }
+                    }
+                }
+            }
+            .tags{
+                float: left;
+            }
+            .share{
+                float: right;
+            }
+        }
+    }
+    .comments{
+        padding-top: 60px;
+        h3{
+            padding-bottom: 25px;
+            font-size: 25px;
+            line-height: 30px;
+            color: #1b2725;
+            @include font-black();
+        }
+        ul.uk-comment-list{
+            .uk-comment+ul{
+                padding-left: 110px;
+            }
+            li{
+                article.uk-comment{
+                    margin-bottom: 50px;
+                }
+                .comment{
+                    .comment-img{
+                        width: 80px;
+                        height: 80px;
+                        display: block;
+                        overflow: hidden;
+                        float: left;
+                        img{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .comment-content{
+                        margin-left: 110px;
+                        .meta{
+                            .meta-author{
+                                margin-top: -7px;
+                                float: left;
+                                h5{
+                                    font-size: 19px;
+                                    color: #1b2725;
+                                    @include font-bold();
+                                }
+                                span{
+                                    font-family: 'Quicksand', sans-serif;
+                                    font-size: 12px;
+                                    color: #a3a6a5;
+                                    @include font-regular();
+                                }
+                            }
+                            .meta-reply{
+                                float: right;
+                                a{
+                                    display: inline-block;
+                                    font-family: 'Quicksand', sans-serif;
+                                    font-size: 12px;
+                                    color: $second-text;
+                                    @include font-regular();
+                                    span{
+                                        margin-left: 10px;
+                                        color: $default-text;
+                                        display: inline-block;
+                                        line-height: 20px;
+                                        width: 20px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                        p{
+                            margin-top: -33px;
+                            padding-top: 10px;
+                            border-top: 1px solid #dcddde;
+                            font-size: 14px;
+                            color: $second-text;
+                            @include font-regular();
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .leave-comment{
+        padding-top: 10px;
+        >h3{
+            font-size: 25px;
+            line-height: 30px;
+            @include font-black();
+            color: #1b2725;
+        }
+        >p{
+            padding-bottom: 25px;
+            font-size: 14px;
+            @include font-regular();
+            color: $second-text;
+            span{
+                color: #f90421;
+            }
+        }
+        form{
+            input, textarea{
+                background: #fafafa !important;
+                border: 1px solid #dcddde;
+                padding: 5px 30px;
+                margin-bottom: 30px;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 14px;
+                color: #1b2725;
+                outline: none;
+                &:focus{
+                    border: 1px solid $primary-color-yellow;
+                }
+                &:invalid + p{
+                    display: inline-block;
+                }
+                &:valid + p{
+                    display: none;
+                }
+                &.error{
+                    box-shadow: 0 0 10px rgba(#fc2b15, .5);
+                    border: 1px solid #fc2b15;
+                }
+            }
+            input{
+                height: 45px;
+                line-height: 45px;
+            }
+            textarea{
+                padding-top: 10px !important;
+            }
+            p{
+                display: inline-block;
+                font-family: 'Quicksand', sans-serif;
+                color: $second-text;
+                font-size: 14px;
+                opacity: .6;
+                position: absolute;
+                left: 32px;
+                top: 11px;
+                span{
+                    color: #f90421;
+                }
+            }
+            .brick-button{
+                margin-top: 15px;
+            }
+        }
+    }
+}

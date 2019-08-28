@@ -1,0 +1,81 @@
+/*
+    Faq's
+*/
+.faq{
+    .faq-content{
+        .brick-title{
+            padding-bottom: 50px;
+        }
+        .holder-our-faq{
+            margin-bottom: 75px;
+            .title{
+                margin-bottom: 25px;
+                background: #fafafa;
+                border: 1px solid #dcddde;
+                cursor: pointer;
+                position: relative;
+                &.active{
+                    a{
+                        background: $primary-color-yellow;
+                        color: $default-text;
+                        .dropdown-expander{
+                            color: $default-text;
+                        }
+                    }
+                }
+                a{
+                    display: block;
+                    font-family: 'Titillium Web', sans-serif;
+                    font-size: 19px;
+                    color: #1b2725;
+                    line-height: 46px;
+                    @include font-bold();
+                    padding: 0 40px;
+                    pointer-events: none;
+                    .dropdown-expander{
+                        background: transparent;
+                        font-size: 15px;
+                        color: #1b2725;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        position: absolute;
+                        left: 15px;
+                        top: 0;
+                        span{
+                            margin-top: 17px;
+                        }
+                    }
+                }
+                .content{
+                    display: none;
+                    padding: 40px;
+                    font-size: 14px;
+                    color: $second-text;
+                    @include font-regular();
+                }
+            }
+        }
+        >p{
+            padding-bottom: 45px;
+            font-size: 14px;
+            color: $second-text;
+            @include font-regular();
+        }
+        .box-img{
+            overflow: hidden;
+            &:hover{
+                img{
+                    @include scale(1.1);
+                    transition: all .5s ease;
+                }
+            }
+            img{
+                display: block;
+                width: 100%;
+                height: auto;
+                transition: all .5s ease;
+            }
+        }
+    }
+}
