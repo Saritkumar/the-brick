@@ -450,7 +450,7 @@ function initMap() {
         
         var map = new google.maps.Map(document.getElementById('gmap_contact'), {
             zoom: 16,
-            center: new google.maps.LatLng(40.714700, -74.005901),
+            center: new google.maps.LatLng(27.5342, 79.9556),
 			scrollwheel: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP 
         });
